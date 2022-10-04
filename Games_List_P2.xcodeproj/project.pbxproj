@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D379C2B28EC7C9D00BDFC23 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D379C2A28EC7C9D00BDFC23 /* Tag.swift */; };
+		3D379C2D28EC7D4200BDFC23 /* DetallesGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D379C2C28EC7D4200BDFC23 /* DetallesGameController.swift */; };
+		3D379C2F28EC851B00BDFC23 /* CeldaTagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D379C2E28EC851B00BDFC23 /* CeldaTagController.swift */; };
 		3DC8CA0228E5FE1D00B27560 /* CeldaGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8CA0128E5FE1D00B27560 /* CeldaGameController.swift */; };
 		3DCBBF2728E5EDFD0052DD28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCBBF2628E5EDFD0052DD28 /* AppDelegate.swift */; };
 		3DCBBF2928E5EDFD0052DD28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCBBF2828E5EDFD0052DD28 /* SceneDelegate.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D379C2A28EC7C9D00BDFC23 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		3D379C2C28EC7D4200BDFC23 /* DetallesGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesGameController.swift; sourceTree = "<group>"; };
+		3D379C2E28EC851B00BDFC23 /* CeldaTagController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaTagController.swift; sourceTree = "<group>"; };
 		3DC8CA0128E5FE1D00B27560 /* CeldaGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaGameController.swift; sourceTree = "<group>"; };
 		3DCBBF2328E5EDFD0052DD28 /* Games_Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Games_Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCBBF2628E5EDFD0052DD28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,10 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				3DCF912728E5F15B0003AAEB /* App */,
-				3DCF912928E5F16E0003AAEB /* Assets */,
 				3DCF912828E5F15E0003AAEB /* Storyboards */,
 				3DCF912A28E5F1890003AAEB /* Controllers */,
 				3DCF912628E5F1550003AAEB /* Models */,
+				3DCF912928E5F16E0003AAEB /* Assets */,
 			);
 			path = Games_List_P2;
 			sourceTree = "<group>";
@@ -134,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				3DCF912B28E5F1F00003AAEB /* Game.swift */,
+				3D379C2A28EC7C9D00BDFC23 /* Tag.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -170,6 +177,8 @@
 			children = (
 				3DCBBF2A28E5EDFD0052DD28 /* GamesController.swift */,
 				3DC8CA0128E5FE1D00B27560 /* CeldaGameController.swift */,
+				3D379C2C28EC7D4200BDFC23 /* DetallesGameController.swift */,
+				3D379C2E28EC851B00BDFC23 /* CeldaTagController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -305,9 +314,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D379C2F28EC851B00BDFC23 /* CeldaTagController.swift in Sources */,
 				3DCBBF2B28E5EDFD0052DD28 /* GamesController.swift in Sources */,
 				3DCBBF2728E5EDFD0052DD28 /* AppDelegate.swift in Sources */,
 				3DCBBF2928E5EDFD0052DD28 /* SceneDelegate.swift in Sources */,
+				3D379C2B28EC7C9D00BDFC23 /* Tag.swift in Sources */,
+				3D379C2D28EC7D4200BDFC23 /* DetallesGameController.swift in Sources */,
 				3DCF912C28E5F1F00003AAEB /* Game.swift in Sources */,
 				3DC8CA0228E5FE1D00B27560 /* CeldaGameController.swift in Sources */,
 			);

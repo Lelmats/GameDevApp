@@ -13,6 +13,7 @@ class CeldaGameController: UITableViewCell {
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var lblPublisher: UILabel!
     @IBOutlet weak var lblPrice: UILabel!
-    @IBOutlet weak var lblImage: UIImageView!
+    @IBOutlet weak var imgFrontImg: UIImageView!
+    
     
 }

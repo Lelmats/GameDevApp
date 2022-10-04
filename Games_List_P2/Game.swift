@@ -10,25 +10,25 @@ class Game {
     var nombre : String
     var publisher : String
     var price : String
-    var image : String
+    var frontImg : String
     var plataform : String
     var reviews : String
     var dateOfPublish : String
     var size : String
     var description : String
-    //var etiquetas : [Etiqueta]
+    var tags : [Tag]
     
-    init(nombre : String, publisher : String, price : String, image : String, plataform : String, reviews : String, dateOfPublish : String, size : String, description : String) {
+    init(nombre : String, publisher : String, price : String, frontImg : String, plataform : String, reviews : String, dateOfPublish : String, size : String, description : String, tags : [Tag]) {
         self.nombre = nombre
         self.publisher = publisher
         self.price = price
-        self.image = image
+        self.frontImg = frontImg
         self.plataform = plataform
         self.reviews = reviews
         self.dateOfPublish = dateOfPublish
         self.size = size
         self.description = description
-        //self.etiquetas = etiquetas
+        self.tags = tags
 
     }
 }
