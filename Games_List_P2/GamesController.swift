@@ -17,7 +17,7 @@ class GamesController: UIViewController, UITableViewDelegate, UITableViewDataSou
     var Tags_2 : [Tag] = []
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        return 140
     }
     //Nùmero de secciones que tiene mi table view
     func numberOfSections(in tableView: UITableView) -> Int {
