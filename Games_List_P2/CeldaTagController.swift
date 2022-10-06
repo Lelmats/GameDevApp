@@ -11,5 +11,7 @@ import UIKit
 class CeldaTagController: UITableViewCell {
     
     @IBOutlet weak var lblNombre: UILabel!
+    @IBOutlet weak var lblEtiqueta2: UILabel!
+    
     
 }

@@ -36,20 +36,30 @@ class GamesController: UIViewController, UITableViewDelegate, UITableViewDataSou
         celda?.lblPublisher.text = Games[indexPath.row].publisher
         celda?.lblPrice.text = Games[indexPath.row].price
         celda?.imgFrontImg.image = UIImage(named: Games[indexPath.row].frontImg)
+    
+        celda?.imgFrontImg.layer.cornerRadius = 5
+        celda?.imgFrontImg.clipsToBounds = true
+        celda?.imgFrontImg.layer.borderWidth = 0
+        celda?.imgFrontImg.layer.borderColor = UIColor.clear.cgColor
+        
         return celda!
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        Tags_1.append(Tag(nombre : "Puzzle", codigo: "12"))
-        Tags_1.append(Tag(nombre : "Fun", codigo: "12"))
         
-        Tags_2.append(Tag(nombre : "Construction", codigo: "12"))
-        Tags_2.append(Tag(nombre : "Kids", codigo: "12"))
+        Tags_1.append(Tag(nombre : "Puzzle", etiqueta2: "Misterio"))
+        Tags_1.append(Tag(nombre : "Fun", etiqueta2: "Historia"))
+        
+        Tags_2.append(Tag(nombre : "Construction", etiqueta2: "12"))
+        Tags_2.append(Tag(nombre : "Kids", etiqueta2: "12"))
         // Do any additional setup after loading the view.
         
-        Games.append(Game(nombre: "Portal", publisher: "Valve", price: "13.99", frontImg: "portadaPortal", plataform: "Steam", reviews: "Positive", dateOfPublish: "08/01/2008", size: "6GB", description: "Good", tags: Tags_1))
+        Games.append(Game(nombre: "Portal", publisher: "Valve", price: "13.99", frontImg: "portadaPortal", plataform: "Steam", reviews: "Positive", dateOfPublish: "08/01/2008", size: "6GB",
+            description: "Portal consists primarily of a series of puzzles that must be solved by teleporting the player's character and simple objects using the Aperture Science Handheld Portal Device, often referred to as the portal gun.",
+            tags: Tags_1))
         Games.append(Game(nombre: "Minecraft", publisher: "Mojang", price: "13.99", frontImg: "portadaMinecraft", plataform: "Mojang.net", reviews: "Positive", dateOfPublish: "08/01/2008", size: "6GB", description: "Good", tags: Tags_2))
-        
+    
+
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {

@@ -37,6 +37,7 @@ class DetallesGameController: UIViewController, UITableViewDelegate, UITableView
             lblDateOf.text = game!.dateOfPublish
             lblSize.text = game!.size
             lblDescription.text = game!.description
+            
         }
         else {
             self.title = "Lel"
@@ -45,7 +46,7 @@ class DetallesGameController: UIViewController, UITableViewDelegate, UITableView
     
     //Altura de celda
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 400
+        return 35
     }
     //Nùmero de secciones que tiene mi table view
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -61,6 +62,7 @@ class DetallesGameController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaTag") as? CeldaTagController
         celda?.lblNombre.text = game!.tags[indexPath.row].nombre
+        celda?.lblEtiqueta2.text = game!.tags[indexPath.row].etiqueta2
         return celda!
     }
 }

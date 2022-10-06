@@ -9,10 +9,10 @@
 class Tag {
     
     var nombre : String
-    var codigo : String
+    var etiqueta2 : String
     
-    init(nombre : String, codigo : String) {
+    init(nombre : String, etiqueta2 : String) {
         self.nombre = nombre
-        self.codigo = codigo
+        self.etiqueta2 = etiqueta2
     }
 }
