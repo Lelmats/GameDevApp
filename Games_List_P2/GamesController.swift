@@ -59,10 +59,10 @@ class GamesController: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        Tags_1.append(Tag(nombre : "Puzzle", etiqueta2: "Misterio"))
-        Tags_1.append(Tag(nombre : "Fun", etiqueta2: "Historia"))
-        Tags_1.append(Tag(nombre : "God", etiqueta2: "BigBrain"))
+                
+        Tags_1.append(Tag(nombre : "Puzzle", etiqueta2: " Misterio  "))
+        Tags_1.append(Tag(nombre : "Fun", etiqueta2: " Historia  "))
+        Tags_1.append(Tag(nombre : "God", etiqueta2: " BigBrain  " ))
 
         Tags_2.append(Tag(nombre : "Construction", etiqueta2: "12"))
         Tags_2.append(Tag(nombre : "Kids", etiqueta2: "12"))

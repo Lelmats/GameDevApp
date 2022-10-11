@@ -38,6 +38,10 @@ class DetallesGameController: UIViewController, UITableViewDelegate, UITableView
             lblSize.text = game!.size
             lblDescription.text = game!.description
             
+            imgFrontImg.layer.cornerRadius = 5
+            imgFrontImg.clipsToBounds = true
+            imgFrontImg.layer.borderWidth = 2
+            imgFrontImg.layer.borderColor = UIColor.gray.cgColor
         }
         else {
             self.title = "Lel"
@@ -63,6 +67,11 @@ class DetallesGameController: UIViewController, UITableViewDelegate, UITableView
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaTag") as? CeldaTagController
         celda?.lblNombre.text = game!.tags[indexPath.row].nombre
         celda?.lblEtiqueta2.text = game!.tags[indexPath.row].etiqueta2
+        
+        celda?.lblEtiqueta2.layer.borderColor = UIColor.darkGray.cgColor
+        celda?.lblEtiqueta2.layer.cornerRadius = 5
+        celda?.lblEtiqueta2.layer.borderWidth = 3.0
+        
         return celda!
     }
 }
