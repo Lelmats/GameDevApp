@@ -50,7 +50,7 @@ class DetallesGameController: UIViewController, UITableViewDelegate, UITableView
     
     //Altura de celda
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 35
+        return 45
     }
     //Nùmero de secciones que tiene mi table view
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -69,9 +69,11 @@ class DetallesGameController: UIViewController, UITableViewDelegate, UITableView
         celda?.lblEtiqueta2.text = game!.tags[indexPath.row].etiqueta2
         
         celda?.lblEtiqueta2.layer.borderColor = UIColor.darkGray.cgColor
-        celda?.lblEtiqueta2.layer.cornerRadius = 5
+        celda?.lblEtiqueta2.layer.cornerRadius = 10
         celda?.lblEtiqueta2.layer.borderWidth = 3.0
-        
+        celda?.lblNombre.layer.borderColor = UIColor.darkGray.cgColor
+        celda?.lblNombre.layer.cornerRadius = 10
+        celda?.lblNombre.layer.borderWidth = 3.0
         return celda!
     }
 }

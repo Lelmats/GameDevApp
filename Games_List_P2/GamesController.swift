@@ -60,65 +60,65 @@ class GamesController: UIViewController, UITableViewDelegate, UITableViewDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        Tags_1.append(Tag(nombre : "Puzzle", etiqueta2: " Misterio  "))
-        Tags_1.append(Tag(nombre : "Fun", etiqueta2: " Historia  "))
-        Tags_1.append(Tag(nombre : "God", etiqueta2: " BigBrain  " ))
+        Tags_1.append(Tag(nombre : " Puzzle ", etiqueta2: " Misterio  "))
+        Tags_1.append(Tag(nombre : " Fun ", etiqueta2: " Historia  "))
+        Tags_1.append(Tag(nombre : " God ", etiqueta2: " BigBrain  " ))
 
-        Tags_2.append(Tag(nombre : "Construction", etiqueta2: "12"))
-        Tags_2.append(Tag(nombre : "Kids", etiqueta2: "12"))
-        Tags_2.append(Tag(nombre : "Creative", etiqueta2: "Good"))
+        Tags_2.append(Tag(nombre : " Construction ", etiqueta2: " 12 "))
+        Tags_2.append(Tag(nombre : " Kids ", etiqueta2: " 12 "))
+        Tags_2.append(Tag(nombre : " Creative ", etiqueta2: " Good "))
         
-        Tags_3.append(Tag(nombre : "God", etiqueta2: "Demon"))
-        Tags_3.append(Tag(nombre : "Killer", etiqueta2: "Monster"))
-        Tags_3.append(Tag(nombre : "Fun", etiqueta2: ""))
+        Tags_3.append(Tag(nombre : " God ", etiqueta2: " Demon "))
+        Tags_3.append(Tag(nombre : " Killer ", etiqueta2: " Monster "))
+        Tags_3.append(Tag(nombre : " Fun ", etiqueta2: " lel "))
         
-        Tags_4.append(Tag(nombre : "Creative", etiqueta2: "God"))
-        Tags_4.append(Tag(nombre : "Flying", etiqueta2: "Infinite"))
-        Tags_4.append(Tag(nombre : "Neverend", etiqueta2: "Imposible"))
+        Tags_4.append(Tag(nombre : " Creative ", etiqueta2: " God "))
+        Tags_4.append(Tag(nombre : " Flying ", etiqueta2: " Infinite "))
+        Tags_4.append(Tag(nombre : " Neverend" , etiqueta2: " Imposible "))
         
-        Tags_5.append(Tag(nombre : "PlayerVS", etiqueta2: "Bots"))
-        Tags_5.append(Tag(nombre : "Fun", etiqueta2: "Gods"))
-        Tags_5.append(Tag(nombre : "Animation", etiqueta2: "Good"))
+        Tags_5.append(Tag(nombre : " PlayerVS ", etiqueta2: " Bots "))
+        Tags_5.append(Tag(nombre : " Fun ", etiqueta2: " Gods "))
+        Tags_5.append(Tag(nombre : " Animation ", etiqueta2: " Good "))
         
-        Tags_6.append(Tag(nombre : "Creative", etiqueta2: "Dumb"))
-        Tags_6.append(Tag(nombre : "WFF", etiqueta2: "Awesome"))
-        Tags_6.append(Tag(nombre : "Infinity", etiqueta2: "Friends"))
+        Tags_6.append(Tag(nombre : " Creative ", etiqueta2: " Dumb "))
+        Tags_6.append(Tag(nombre : " WTF ", etiqueta2: " Awesome "))
+        Tags_6.append(Tag(nombre : " Infinity ", etiqueta2: " Friends "))
         
-        Tags_7.append(Tag(nombre : "Competitive", etiqueta2: "PlayerVS"))
-        Tags_7.append(Tag(nombre : "Guns", etiqueta2: "Fire"))
-        Tags_7.append(Tag(nombre : "War", etiqueta2: "Bomb"))
+        Tags_7.append(Tag(nombre : " Competitive ", etiqueta2: " PlayerVS "))
+        Tags_7.append(Tag(nombre : " Guns ", etiqueta2: " Fire "))
+        Tags_7.append(Tag(nombre : " War ", etiqueta2: " Bomb "))
         
-        Tags_8.append(Tag(nombre : "Survive", etiqueta2: "PlayerVS"))
-        Tags_8.append(Tag(nombre : "MidAge", etiqueta2: "Start"))
-        Tags_8.append(Tag(nombre : "Progression", etiqueta2: "Good"))
+        Tags_8.append(Tag(nombre : " Survive ", etiqueta2: " PlayerVS "))
+        Tags_8.append(Tag(nombre : " MidAge ", etiqueta2: " Start "))
+        Tags_8.append(Tag(nombre : " Progression ", etiqueta2: " Good "))
         
-        Tags_9.append(Tag(nombre : "PlayerVS", etiqueta2: "Guns"))
-        Tags_9.append(Tag(nombre : "Tech", etiqueta2: "Noice"))
-        Tags_9.append(Tag(nombre : "Map", etiqueta2: "Nice"))
+        Tags_9.append(Tag(nombre : " PlayerVS ", etiqueta2: " Guns "))
+        Tags_9.append(Tag(nombre : " Tech ", etiqueta2: " Noice "))
+        Tags_9.append(Tag(nombre : " Map ", etiqueta2: " Nice "))
         
-        Tags_10.append(Tag(nombre : "Fun", etiqueta2: "Friends"))
-        Tags_10.append(Tag(nombre : "Dumb", etiqueta2: "Clumsy"))
-        Tags_10.append(Tag(nombre : "Run", etiqueta2: ""))
+        Tags_10.append(Tag(nombre : " Fun ", etiqueta2: " Friends "))
+        Tags_10.append(Tag(nombre : " Dumb ", etiqueta2: " Clumsy "))
+        Tags_10.append(Tag(nombre : " Run ", etiqueta2: " lol "))
         
-        Tags_11.append(Tag(nombre : "Wasteland", etiqueta2: "Start"))
-        Tags_11.append(Tag(nombre : "God", etiqueta2: "Killers"))
-        Tags_11.append(Tag(nombre : "Help", etiqueta2: "Skulls"))
+        Tags_11.append(Tag(nombre : " Wasteland ", etiqueta2: " Start "))
+        Tags_11.append(Tag(nombre : " God ", etiqueta2: " Killers "))
+        Tags_11.append(Tag(nombre : " Help ", etiqueta2: " Skulls "))
         
-        Tags_12.append(Tag(nombre : "Wasteland2", etiqueta2: "Skulls"))
-        Tags_12.append(Tag(nombre : "MoreSkulls", etiqueta2: "Guns"))
-        Tags_12.append(Tag(nombre : "State", etiqueta2: "Kill"))
+        Tags_12.append(Tag(nombre : " Wasteland2 ", etiqueta2: " Skulls "))
+        Tags_12.append(Tag(nombre : " MoreSkulls ", etiqueta2: " Guns "))
+        Tags_12.append(Tag(nombre : " State ", etiqueta2: " Kill "))
         
-        Tags_13.append(Tag(nombre : "Wasteland3", etiqueta2: "MoreSkulls"))
-        Tags_13.append(Tag(nombre : "God", etiqueta2: "Axe`s"))
-        Tags_13.append(Tag(nombre : "Run", etiqueta2: "WastelandCars"))
+        Tags_13.append(Tag(nombre : " Wasteland3 ", etiqueta2: " MoreSkulls "))
+        Tags_13.append(Tag(nombre : " God ", etiqueta2: " Axe`s "))
+        Tags_13.append(Tag(nombre : " Run ", etiqueta2: " WastelandCars "))
         
-        Tags_14.append(Tag(nombre : "GodGame", etiqueta2: "MiddleAge"))
-        Tags_14.append(Tag(nombre : "Swords", etiqueta2: "People"))
-        Tags_14.append(Tag(nombre : "Town", etiqueta2: "GiantMap"))
+        Tags_14.append(Tag(nombre : " GodGame ", etiqueta2: " MiddleAge "))
+        Tags_14.append(Tag(nombre : " Swords ", etiqueta2: " People "))
+        Tags_14.append(Tag(nombre : " Town ", etiqueta2: " GiantMap "))
         
-        Tags_15.append(Tag(nombre : "Fun", etiqueta2: "Friends"))
-        Tags_15.append(Tag(nombre : "Dumb", etiqueta2: "COLORS"))
-        Tags_15.append(Tag(nombre : "Impostor", etiqueta2: "Crewmate"))
+        Tags_15.append(Tag(nombre : " Fun ", etiqueta2: " Friends "))
+        Tags_15.append(Tag(nombre : " Dumb " , etiqueta2: " COLORS" ))
+        Tags_15.append(Tag(nombre : " Impostor ", etiqueta2: " Crewmate "))
     
         
     
@@ -156,6 +156,7 @@ class GamesController: UIViewController, UITableViewDelegate, UITableViewDataSou
         
         Games.append(Game(nombre: "Among Us", publisher: "Innersloth", price: "12.99", frontImg: "amongus_portada", plataform: "Steam,Switch,Xbox", reviews: "Positive", dateOfPublish: "08/01/2008", size: "6GB", description: "A social deception game which can be downloaded for free on Android and iOs, or to purchase for use on a PC. It can be played with a group of between 4 and 10 players either online by joining a game with strangers.", tags: Tags_15))
     
+        self.title = "GameDB"
 
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
