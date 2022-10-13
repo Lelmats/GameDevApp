@@ -81,29 +81,31 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="KK1-bd-vJp"/>
                                 </connections>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   Search Game" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIv-mN-ie8">
-                                <rect key="frame" x="0.0" y="88" width="414" height="48"/>
-                                <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <searchBar contentMode="redraw" text="" placeholder="Search Games" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Anq-HZ-0iU">
+                                <rect key="frame" x="0.0" y="92" width="414" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>nombre</string>
+                                </scopeButtonTitles>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="0.098039215686274508" green="0.14509803921568626" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Anq-HZ-0iU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="4aw-f1-ki0"/>
                             <constraint firstItem="yVp-fY-Qvk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EpZ-rn-t1V"/>
-                            <constraint firstItem="bIv-mN-ie8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Klz-6E-9Vw"/>
-                            <constraint firstItem="bIv-mN-ie8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aj1-DP-vJ3"/>
+                            <constraint firstItem="Anq-HZ-0iU" firstAttribute="leading" secondItem="yVp-fY-Qvk" secondAttribute="leading" id="P3N-VE-aco"/>
                             <constraint firstItem="yVp-fY-Qvk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cOl-BZ-hx6"/>
+                            <constraint firstItem="Anq-HZ-0iU" firstAttribute="trailing" secondItem="yVp-fY-Qvk" secondAttribute="trailing" id="cwI-9L-vAr"/>
                             <constraint firstAttribute="bottomMargin" secondItem="yVp-fY-Qvk" secondAttribute="bottom" constant="-34" id="edC-fE-zA0"/>
-                            <constraint firstItem="yVp-fY-Qvk" firstAttribute="top" secondItem="bIv-mN-ie8" secondAttribute="bottom" constant="10" id="gfT-H2-ieO"/>
-                            <constraint firstItem="bIv-mN-ie8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yfc-MM-McM"/>
+                            <constraint firstItem="yVp-fY-Qvk" firstAttribute="top" secondItem="Anq-HZ-0iU" secondAttribute="bottom" constant="10" id="iOH-nR-8Ku"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="CTK-iG-7Jt"/>
                     <connections>
+                        <outlet property="searchBar" destination="Anq-HZ-0iU" id="yvq-u0-F9X"/>
                         <outlet property="tvGames" destination="yVp-fY-Qvk" id="xUe-zS-fmw"/>
                     </connections>
                 </viewController>

@@ -8,8 +8,8 @@
 
 import UIKit
 
-class GamesController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class GamesController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tvGames: UITableView!
     
     var Games : [Game] = []
@@ -28,6 +28,7 @@ class GamesController: UIViewController, UITableViewDelegate, UITableViewDataSou
     var Tags_13 : [Tag] = []
     var Tags_14 : [Tag] = []
     var Tags_15 : [Tag] = []
+    var filteredData: [Game]!
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
@@ -49,7 +50,8 @@ class GamesController: UIViewController, UITableViewDelegate, UITableViewDataSou
         celda?.lblPublisher.text = Games[indexPath.row].publisher
         celda?.lblPrice.text = Games[indexPath.row].price
         celda?.imgFrontImg.image = UIImage(named: Games[indexPath.row].frontImg)
-    
+        
+            
         celda?.imgFrontImg.layer.cornerRadius = 5
         celda?.imgFrontImg.clipsToBounds = true
         celda?.imgFrontImg.layer.borderWidth = 0
@@ -57,9 +59,28 @@ class GamesController: UIViewController, UITableViewDelegate, UITableViewDataSou
         
         return celda!
     }
+
+    // This method updates filteredData based on the text in the Search Box
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        // When there is no text, filteredData is the same as the original data
+        // When user has entered text into the search box
+        // Use the filter method to iterate over all items in the data array
+        // For each item, return true if the item should be included and false if the
+        // item should NOT be included
+        filteredData = searchText.isEmpty ? Games : Games.filter { (item: Game) -> Bool in
+            // If dataItem matches the searchText, return true to include it
+            return item.nombre.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+        }
+        
+        tvGames.reloadData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        
+        tvGames.dataSource = self
+        searchBar.delegate = self
+        filteredData = Games
+
         Tags_1.append(Tag(nombre : " Puzzle ", etiqueta2: " Misterio  "))
         Tags_1.append(Tag(nombre : " Fun ", etiqueta2: " Historia  "))
         Tags_1.append(Tag(nombre : " God ", etiqueta2: " BigBrain  " ))
