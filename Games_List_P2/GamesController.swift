@@ -50,7 +50,6 @@ class GamesController: UIViewController, UITableViewDelegate, UITableViewDataSou
         celda?.lblPublisher.text = Games[indexPath.row].publisher
         celda?.lblPrice.text = Games[indexPath.row].price
         celda?.imgFrontImg.image = UIImage(named: Games[indexPath.row].frontImg)
-        
             
         celda?.imgFrontImg.layer.cornerRadius = 5
         celda?.imgFrontImg.clipsToBounds = true
@@ -67,11 +66,13 @@ class GamesController: UIViewController, UITableViewDelegate, UITableViewDataSou
         // Use the filter method to iterate over all items in the data array
         // For each item, return true if the item should be included and false if the
         // item should NOT be included
-        filteredData = searchText.isEmpty ? Games : Games.filter { (item: Game) -> Bool in
+        Games = searchText.isEmpty ? Games : Games.filter { (item: Game) -> Bool in
             // If dataItem matches the searchText, return true to include it
             return item.nombre.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
         }
-        
+        func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+            self.searchBar.showsCancelButton = true
+        }
         tvGames.reloadData()
     }
     override func viewDidLoad() {
@@ -79,8 +80,7 @@ class GamesController: UIViewController, UITableViewDelegate, UITableViewDataSou
         
         tvGames.dataSource = self
         searchBar.delegate = self
-        filteredData = Games
-
+                
         Tags_1.append(Tag(nombre : " Puzzle ", etiqueta2: " Misterio  "))
         Tags_1.append(Tag(nombre : " Fun ", etiqueta2: " Historia  "))
         Tags_1.append(Tag(nombre : " God ", etiqueta2: " BigBrain  " ))
